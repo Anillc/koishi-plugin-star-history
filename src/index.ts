@@ -1,9 +1,13 @@
-import { Context, Logger, segment } from 'koishi'
+import { Context, Logger, Schema, segment } from 'koishi'
 import {} from 'koishi-plugin-puppeteer'
 import { Page } from 'puppeteer-core'
 
 export const name = 'star-history'
 export const using = ['puppeteer']
+
+interface Config {}
+
+export const Config: Schema<Config> = Schema.object({})
 
 const logger = new Logger('star-history')
 
