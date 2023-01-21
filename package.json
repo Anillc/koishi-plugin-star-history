@@ -9,6 +9,9 @@
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "koishi": "^4.11.0",
     "koishi-plugin-puppeteer": "^3.3.1"
